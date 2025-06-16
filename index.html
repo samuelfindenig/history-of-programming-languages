@@ -5,41 +5,1408 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>History of programming languages</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-
-
-	</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai.min.css">
+    <style>
+		
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 28px;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #61dafb;
+            text-transform: none;
+            font-size: 1.8em;
+        }
+        .reveal h1 {
+            font-size: 2.2em;
+        }
+        .reveal h2 {
+            font-size: 1.6em;
+        }
+        .reveal h3 {
+            font-size: 1.3em;
+        }
+        .reveal h4 {
+            color: #61dafb;
+            font-size: 1.1em;
+        }
+        .reveal .slides section {
+            text-align: left;
+            font-size: 0.85em;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .reveal ul {
+            font-size: 0.9em;
+        }
+        .reveal li {
+            margin-bottom: 0.3em;
+        }
+        .reveal p {
+            font-size: 0.9em;
+        }
+        .ancient-slide {
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
+        }
+        .mechanical-slide {
+            background: linear-gradient(135deg, #1a2c1a, #2d4a2d);
+        }
+        .electronic-slide {
+            background: linear-gradient(135deg, #1a1a2e, #2e2e5a);
+        }
+        .modern-slide {
+            background: linear-gradient(135deg, #0f0f23, #1a1a3e);
+        }
+        .quantum-slide {
+            background: linear-gradient(135deg, #0d1421, #2d1b69);
+        }
+        .ai-slide {
+            background: linear-gradient(135deg, #1a0d1f, #3d1a4a);
+        }
+        .content-box {
+            background: rgba(255,255,255,0.1);
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 4px solid #61dafb;
+            font-size: 0.85em;
+        }
+        .content-box h3 {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        .content-box h4 {
+            font-size: 1.0em;
+            margin-bottom: 6px;
+        }
+        .content-box ul {
+            font-size: 0.9em;
+        }
+        .content-box li {
+            margin-bottom: 0.2em;
+        }
+        .innovation-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .innovation-card {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.85em;
+        }
+        .innovation-card h4 {
+            font-size: 1.0em;
+            margin-bottom: 6px;
+        }
+        .innovation-card ul {
+            font-size: 0.9em;
+        }
+        .innovation-card li {
+            margin-bottom: 0.2em;
+        }
+        .stats-highlight {
+            background: rgba(97, 218, 251, 0.15);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 8px 0;
+            font-size: 0.8em;
+        }
+        .impact-highlight {
+            background: rgba(255, 193, 7, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ffc107;
+            margin: 8px 0;
+            font-size: 0.85em;
+        }
+        .quantum-concept {
+            background: rgba(97, 218, 251, 0.1);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 8px 0;
+            border: 1px solid #61dafb;
+            font-size: 0.85em;
+        }
+    </style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h3>History of programming languages</h3>
-					<p>
-						<small>By <a href="https://github.com/samuelfindenig">Samuel Findenig</a> and <a href="https://github.com/moritzheinzle">Moritz Heinzle</a></small>
-					</p>
+				<section class="title-slide">
+                <h2>The Evolution of Programming Languages</h1>
+                <h3>From Machine Code to Modern Paradigms</h2>
+                <p style="text-align: center; margin-top: 50px; color: #888;">
+                    A journey through seven decades of computing innovation
+                </p>
+            </section>
+			<section class="ancient-slide">
+                <h2>🏺 The Dawn of Calculation</h2>
+                <div class="ancient-tool">
+                    <h3>Counting Systems & Early Mathematics</h3>
+                    <ul>
+                        <li><strong>Tally Systems (30,000+ BCE):</strong> Bone notches and cave markings</li>
+                        <li><strong>Ishango Bone (20,000 BCE):</strong> Possible lunar calendar and prime numbers</li>
+                        <li><strong>Sumerian Clay Tablets (3100 BCE):</strong> First written numerical records</li>
+                        <li><strong>Egyptian Mathematics:</strong> Decimal system and geometric calculations</li>
+                    </ul>
+                </div>
+            </section>
 
-				</section>
-				<section>
-					<h3>Table of Content</h3>
-					<ul>
-						<li class="fragment">Diffrence Compiler & Interpreter</li>
-						<li class="fragment">Commonly used terms</li>
-						<li class="fragment">Evelution of Computer programming</li>
-					</ul>
-				</section>
-				<section>
-					<section>
-						<h3>Compiler or Interpretter?</h3>					
-					</section>
-					<section>
-						<h2 class="fragment semi-fade-out">What is a Compiler?</h2>
-						<p class="fragment" style="text-align: left;" >A compiler is a software tool that converts high-level source code into a platform-specific executable binary file (e.g., a .exe on Windows). If there is a Error in the Code, the executable can not build and can't be run.</p>
-					</section>
-				</section>
+            <section class="ancient-slide">
+                <h2>🧮 The Abacus Family</h2>
+                <div class="innovation-grid">
+                    <div class="ancient-tool">
+                        <h4>Mesopotamian Abacus (2700 BCE)</h4>
+                        <p>Sand tables with columns for different place values</p>
+                    </div>
+                    <div class="ancient-tool">
+                        <h4>Chinese Suanpan (500 BCE)</h4>
+                        <p>2 heaven beads, 5 earth beads per rod</p>
+                    </div>
+                    <div class="ancient-tool">
+                        <h4>Roman Abacus (100 CE)</h4>
+                        <p>Grooved board with sliding counters</p>
+                    </div>
+                    <div class="ancient-tool">
+                        <h4>Japanese Soroban (1600s)</h4>
+                        <p>Refined version still used today</p>
+                    </div>
+                </div>
+                <div class="stats-box">
+                    <strong>Impact:</strong> Expert abacus users can perform calculations faster than electronic calculators for basic operations!
+                </div>
+            </section>
+
+            <section class="ancient-slide">
+                <h2>⚙️ The Antikythera Mechanism</h2>
+                <div class="timeline-item">
+                    <h3>150-100 BCE - The World's First Computer</h3>
+                    <ul>
+                        <li><strong>Discovery:</strong> Recovered from shipwreck off Greek island (1901)</li>
+                        <li><strong>Complexity:</strong> 37+ interlocking bronze gears</li>
+                        <li><strong>Functions:</strong> Predicted eclipses, Olympic Games, planetary positions</li>
+                        <li><strong>Precision:</strong> Accurate to within hours over centuries</li>
+                        <li><strong>Lost Technology:</strong> Nothing comparable until 14th century clocks</li>
+                    </ul>
+                </div>
+                <div class="impact-highlight">
+                    <strong>Revolutionary Insight:</strong> Demonstrated that complex mechanical computation was possible in antiquity - rewriting our understanding of ancient Greek technology.
+                </div>
+            </section>
+
+            <section class="ancient-slide">
+                <h2>🌍 Global Ancient Computing</h2>
+                <div class="innovation-grid">
+                    <div class="ancient-tool">
+                        <h4>Mayan Calendar (300 CE)</h4>
+                        <p>Complex interlocking cycles, zero concept, base-20 system</p>
+                    </div>
+                    <div class="ancient-tool">
+                        <h4>Indian Mathematics (500 CE)</h4>
+                        <p>Decimal system, zero as number, algebra foundations</p>
+                    </div>
+                    <div class="ancient-tool">
+                        <h4>Islamic Golden Age (800 CE)</h4>
+                        <p>Algorithms, algebra, House of Wisdom libraries</p>
+                    </div>
+                    <div class="ancient-tool">
+                        <h4>Inca Quipu (1400s)</h4>
+                        <p>Knotted string computing for accounting and records</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ancient-slide">
+                <h2>🗿 Ancient Computational Concepts</h2>
+                <div class="tech-evolution">
+                    <h4>Boolean Logic Precursors</h4>
+                    <ul>
+                        <li><strong>Aristotelian Logic:</strong> True/false reasoning foundations</li>
+                        <li><strong>Stoic Logic:</strong> Conditional statements and inference</li>
+                        <li><strong>Medieval Logic:</strong> Formal reasoning systems</li>
+                    </ul>
+                </div>
+                <div class="tech-evolution">
+                    <h4>Algorithmic Thinking</h4>
+                    <ul>
+                        <li><strong>Euclid's Algorithm (300 BCE):</strong> Greatest common divisor</li>
+                        <li><strong>Sieve of Eratosthenes:</strong> Finding prime numbers</li>
+                        <li><strong>Al-Khwarizmi (820 CE):</strong> "Algorithm" etymology</li>
+                    </ul>
+                </div>
+            </section>
+			<section class="ancient-slide">
+                <h2>🏛️ Ancient Computing Tools</h2>
+                <div class="ancient-tool">
+                    <h3>The Abacus (c. 2700-2300 BCE)</h3>
+                    <p>One of humanity's first calculating devices</p>
+                    <ul>
+                        <li>Originated in Mesopotamia and China</li>
+                        <li>Still used today in many parts of the world</li>
+                        <li>Demonstrates basic arithmetic operations</li>
+                        <li>Foundation of positional number systems</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="ancient-slide">
+                <h2>⚙️ The Antikythera Mechanism</h2>
+                <div class="timeline-item">
+                    <h3>c. 150-100 BCE - Ancient Greece</h3>
+                    <p>Often called the world's first analog computer</p>
+                    <ul>
+                        <li>Predicted astronomical positions and eclipses</li>
+                        <li>Complex bronze gear system with 30+ gears</li>
+                        <li>Demonstrated sophisticated mechanical computation</li>
+                        <li>Lost technology rediscovered in 1901</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="ancient-slide">
+                <h2>📐 Other Ancient Innovations</h2>
+                <div class="innovation-grid">
+                    <div class="innovation-card">
+                        <h4>Slide Rule (1620s)</h4>
+                        <p>Logarithmic calculations made portable</p>
+                    </div>
+                    <div class="innovation-card">
+                        <h4>Pascaline (1642)</h4>
+                        <p>First mechanical calculator by Blaise Pascal</p>
+                    </div>
+                    <div class="innovation-card">
+                        <h4>Leibniz Wheel (1673)</h4>
+                        <p>First calculator to perform all four operations</p>
+                    </div>
+                    <div class="innovation-card">
+                        <h4>Jacquard Loom (1804)</h4>
+                        <p>Programmable textile machine using punch cards</p>
+                    </div>
+                </div>
+            </section>
+
+			
+            <!-- Mechanical Era -->
+            <section class="mechanical-slide">
+                <h2>⚙️ The Mechanical Revolution</h2>
+                <div class="timeline-item">
+                    <h3>The Slide Rule Era (1620-1980)</h3>
+                    <ul>
+                        <li><strong>Invention:</strong> William Oughtred (1620s)</li>
+                        <li><strong>Principle:</strong> Logarithmic scales for multiplication/division</li>
+                        <li><strong>Evolution:</strong> Circular, cylindrical, specialized versions</li>
+                        <li><strong>Impact:</strong> Essential tool for engineers, scientists for 350+ years</li>
+                        <li><strong>Apollo Program:</strong> Moon landing calculations done on slide rules!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mechanical-slide">
+                <h2>🔧 Mechanical Calculators</h2>
+                <div class="innovation-grid">
+                    <div class="tech-evolution">
+                        <h4>Pascaline (1642)</h4>
+                        <ul>
+                            <li>Blaise Pascal, age 19</li>
+                            <li>8-digit addition/subtraction</li>
+                            <li>Carry mechanism innovation</li>
+                            <li>Only 20 machines built</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Leibniz Wheel (1673)</h4>
+                        <ul>
+                            <li>Four basic operations</li>
+                            <li>Stepped drum mechanism</li>
+                            <li>Basis for 200+ years of calculators</li>
+                            <li>Binary system inventor</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Thomas Arithmometer (1820)</h4>
+                        <ul>
+                            <li>First mass-produced calculator</li>
+                            <li>1,500 units over 30 years</li>
+                            <li>Reliable commercial success</li>
+                            <li>Insurance company adoption</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Comptometer (1887)</h4>
+                        <ul>
+                            <li>Key-driven operation</li>
+                            <li>Professional operators</li>
+                            <li>Speed competitions</li>
+                            <li>Office automation beginning</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mechanical-slide">
+                <h2>🧵 Programmable Machines</h2>
+                <div class="timeline-item">
+                    <h3>Jacquard Loom (1804) - First Programmable Machine</h3>
+                    <ul>
+                        <li><strong>Innovation:</strong> Punch card programming for textile patterns</li>
+                        <li><strong>Impact:</strong> Automated complex weaving, unemployment fears</li>
+                        <li><strong>Legacy:</strong> Punch card concept used for 150+ years</li>
+                        <li><strong>Connection:</strong> Directly inspired Babbage's engines</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Player Piano Revolution (1880s-1920s)</h3>
+                    <ul>
+                        <li><strong>Concept:</strong> Perforated rolls = stored programs</li>
+                        <li><strong>Sophistication:</strong> Expression, dynamics, tempo control</li>
+                        <li><strong>Mass Production:</strong> Automated music reproduction</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mechanical-slide">
+                <h2>🏛️ Babbage's Vision</h2>
+                <div class="tech-evolution">
+                    <h3>Difference Engine (1820s)</h3>
+                    <ul>
+                        <li><strong>Purpose:</strong> Automatic calculation of mathematical tables</li>
+                        <li><strong>Method:</strong> Method of finite differences</li>
+                        <li><strong>Scale:</strong> 25,000 parts, 15 tons when completed</li>
+                        <li><strong>Modern Build:</strong> Successfully constructed in 1991</li>
+                    </ul>
+                </div>
+                <div class="tech-evolution">
+                    <h3>Analytical Engine (1830s-1840s)</h3>
+                    <ul>
+                        <li><strong>Mill:</strong> Central processing unit equivalent</li>
+                        <li><strong>Store:</strong> Memory for numbers and intermediate results</li>
+                        <li><strong>Input/Output:</strong> Punch cards and printing mechanism</li>
+                        <li><strong>Conditional Logic:</strong> Branching and loops</li>
+                        <li><strong>Never Built:</strong> Too complex for 19th century manufacturing</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mechanical-slide">
+                <h2>👩‍💻 Ada Lovelace - First Programmer</h2>
+                <div class="impact-highlight">
+                    <h3>The Enchantress of Numbers (1815-1852)</h3>
+                    <ul>
+                        <li><strong>Collaboration:</strong> Translated and expanded Babbage's work</li>
+                        <li><strong>Note G (1843):</strong> First computer algorithm - calculating Bernoulli numbers</li>
+                        <li><strong>Vision:</strong> Saw potential beyond pure calculation</li>
+                        <li><strong>Prophecy:</strong> "The Analytical Engine might act upon other things besides number"</li>
+                        <li><strong>Legacy:</strong> Ada programming language named in her honor</li>
+                    </ul>
+                </div>
+                <div class="stats-box">
+                    <strong>Remarkable Insight:</strong> Ada envisioned computers creating music, art, and graphics - 100 years before anyone else!
+                </div>
+            </section>
+
+            <!-- Electronic Revolution -->
+            <section class="electronic-slide">
+                <h2>⚡ The Electronic Dawn</h2>
+                <div class="timeline-item">
+                    <h3>Vacuum Tube Era (1904-1960s)</h3>
+                    <ul>
+                        <li><strong>Fleming Valve (1904):</strong> First vacuum tube</li>
+                        <li><strong>Audion (1906):</strong> Amplification and switching</li>
+                        <li><strong>Electronic Switching:</strong> 1000x faster than mechanical</li>
+                        <li><strong>Limitations:</strong> Heat, power consumption, reliability issues</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Boolean Logic Implementation</h3>
+                    <ul>
+                        <li><strong>Claude Shannon (1937):</strong> Boolean algebra + electrical circuits</li>
+                        <li><strong>Relay Logic:</strong> AND, OR, NOT gates with relays</li>
+                        <li><strong>Foundation:</strong> All modern digital logic</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="electronic-slide">
+                <h2>🖥️ First Electronic Computers</h2>
+                <div class="innovation-grid">
+                    <div class="tech-evolution">
+                        <h4>Atanasoff-Berry (1942)</h4>
+                        <ul>
+                            <li>First electronic digital computer</li>
+                            <li>Binary number system</li>
+                            <li>Electronic memory</li>
+                            <li>Legal precedent in patent disputes</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Colossus (1943)</h4>
+                        <ul>
+                            <li>British codebreaking computer</li>
+                            <li>2,400 vacuum tubes</li>
+                            <li>Programmable via plugs/switches</li>
+                            <li>Top secret until 1970s</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>ENIAC (1946)</h4>
+                        <ul>
+                            <li>30 tons, room-sized</li>
+                            <li>18,000 vacuum tubes</li>
+                            <li>5,000 operations per second</li>
+                            <li>Programmed by rewiring</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>EDVAC (1949)</h4>
+                        <ul>
+                            <li>Stored program concept</li>
+                            <li>Von Neumann architecture</li>
+                            <li>Binary operation</li>
+                            <li>Modern computer template</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="electronic-slide">
+                <h2>🔬 The Transistor Revolution</h2>
+                <div class="impact-highlight">
+                    <h3>December 23, 1947 - Bell Labs</h3>
+                    <ul>
+                        <li><strong>Inventors:</strong> Bardeen, Brattain, Shockley</li>
+                        <li><strong>Material:</strong> Germanium point-contact transistor</li>
+                        <li><strong>Breakthrough:</strong> Solid-state amplification and switching</li>
+                        <li><strong>Advantages:</strong> Smaller, faster, more reliable, less power</li>
+                    </ul>
+                </div>
+                <div class="stats-box">
+                    <strong>Transistor Growth:</strong>
+                    <ul>
+                        <li>1947: First working transistor</li>
+                        <li>1954: Silicon transistor</li>
+                        <li>1958: Integrated circuit</li>
+                        <li>Today: 50+ billion transistors in modern processors</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="electronic-slide">
+                <h2>💾 Computer Generations</h2>
+                <div class="innovation-grid">
+                    <div class="tech-evolution">
+                        <h4>1st Generation (1940s-1950s)</h4>
+                        <ul>
+                            <li>Vacuum tubes</li>
+                            <li>Magnetic drum memory</li>
+                            <li>Machine language</li>
+                            <li>Room-sized machines</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>2nd Generation (1950s-1960s)</h4>
+                        <ul>
+                            <li>Transistors</li>
+                            <li>Magnetic core memory</li>
+                            <li>Assembly language</li>
+                            <li>Batch processing</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>3rd Generation (1960s-1970s)</h4>
+                        <ul>
+                            <li>Integrated circuits</li>
+                            <li>Semiconductor memory</li>
+                            <li>Operating systems</li>
+                            <li>Time-sharing</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>4th Generation (1970s-present)</h4>
+                        <ul>
+                            <li>Microprocessors</li>
+                            <li>Personal computers</li>
+                            <li>High-level languages</li>
+                            <li>Graphical interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modern Computing Revolution -->
+            <section class="modern-slide">
+                <h2>🖱️ The Personal Computer Revolution</h2>
+                <div class="timeline-item">
+                    <h3>Microprocessor Era (1971-present)</h3>
+                    <ul>
+                        <li><strong>Intel 4004 (1971):</strong> First microprocessor, 2,300 transistors</li>
+                        <li><strong>Altair 8800 (1975):</strong> First personal computer kit</li>
+                        <li><strong>Apple II (1977):</strong> First mass-market PC with color graphics</li>
+                        <li><strong>IBM PC (1981):</strong> Business computer standard</li>
+                        <li><strong>Macintosh (1984):</strong> First successful GUI personal computer</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="modern-slide">
+                <h2>🌐 The Internet Revolution</h2>
+                <div class="tech-evolution">
+                    <h3>Network Evolution</h3>
+                    <ul>
+                        <li><strong>ARPANET (1969):</strong> First packet-switched network</li>
+                        <li><strong>TCP/IP (1983):</strong> Internet protocol suite</li>
+                        <li><strong>World Wide Web (1991):</strong> Tim Berners-Lee's HTML/HTTP</li>
+                        <li><strong>Mosaic Browser (1993):</strong> First graphical web browser</li>
+                        <li><strong>Dot-com Boom (1990s):</strong> Commercial internet explosion</li>
+                    </ul>
+                </div>
+                <div class="stats-box">
+                    <strong>Internet Growth:</strong> From 4 computers (1969) to 5+ billion users (2024)
+                </div>
+            </section>
+
+            <section class="modern-slide">
+                <h2>📱 Mobile Computing Revolution</h2>
+                <div class="innovation-grid">
+                    <div class="tech-evolution">
+                        <h4>Early Mobile (1990s)</h4>
+                        <ul>
+                            <li>IBM Simon (1994) - first smartphone</li>
+                            <li>Palm Pilot PDAs</li>
+                            <li>Nokia dominance</li>
+                            <li>Basic internet connectivity</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Smartphone Era (2007+)</h4>
+                        <ul>
+                            <li>iPhone revolution (2007)</li>
+                            <li>Android ecosystem (2008)</li>
+                            <li>App stores and ecosystems</li>
+                            <li>Always-connected computing</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Mobile-First World</h4>
+                        <ul>
+                            <li>6+ billion smartphone users</li>
+                            <li>More powerful than 1990s supercomputers</li>
+                            <li>Primary computing device globally</li>
+                            <li>IoT and ubiquitous computing</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>5G & Beyond</h4>
+                        <ul>
+                            <li>Ultra-low latency</li>
+                            <li>Edge computing</li>
+                            <li>AR/VR applications</li>
+                            <li>Connected everything</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="modern-slide">
+                <h2>☁️ Cloud Computing Revolution</h2>
+                <div class="timeline-item">
+                    <h3>The Paradigm Shift</h3>
+                    <ul>
+                        <li><strong>Salesforce (1999):</strong> First major Software-as-a-Service</li>
+                        <li><strong>Amazon EC2 (2006):</strong> Elastic cloud computing</li>
+                        <li><strong>Utility Computing:</strong> Pay-per-use infrastructure</li>
+                        <li><strong>Global Scale:</strong> Data centers worldwide</li>
+                        <li><strong>Serverless Computing:</strong> Function-as-a-Service evolution</li>
+                    </ul>
+                </div>
+                <div class="impact-highlight">
+                    <strong>Cloud Impact:</strong> Democratized access to enterprise-level computing power for startups and individuals worldwide.
+                </div>
+            </section>
+
+            <section class="modern-slide">
+                <h2>🌊 Big Data & Analytics</h2>
+                <div class="innovation-grid">
+                    <div class="tech-evolution">
+                        <h4>Data Explosion</h4>
+                        <ul>
+                            <li>Zettabytes of data daily</li>
+                            <li>Social media streams</li>
+                            <li>IoT sensor networks</li>
+                            <li>Scientific instruments</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Processing Revolution</h4>
+                        <ul>
+                            <li>Hadoop ecosystem</li>
+                            <li>Apache Spark</li>
+                            <li>NoSQL databases</li>
+                            <li>Real-time processing</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Machine Learning</h4>
+                        <ul>
+                            <li>Pattern recognition</li>
+                            <li>Predictive analytics</li>
+                            <li>Deep learning neural networks</li>
+                            <li>AI-driven insights</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Business Intelligence</h4>
+                        <ul>
+                            <li>Real-time dashboards</li>
+                            <li>Automated decision making</li>
+                            <li>Personalization engines</li>
+                            <li>Competitive advantages</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Revolution -->
+            <section class="ai-slide">
+                <h2>🧠 Artificial Intelligence Evolution</h2>
+                <div class="timeline-item">
+                    <h3>AI Timeline - From Dreams to Reality</h3>
+                    <ul>
+                        <li><strong>1950:</strong> Turing Test proposed - machine intelligence benchmark</li>
+                        <li><strong>1956:</strong> Dartmouth Conference - "Artificial Intelligence" term coined</li>
+                        <li><strong>1960s-70s:</strong> Expert systems and symbolic AI</li>
+                        <li><strong>1980s:</strong> Neural networks resurgence</li>
+                        <li><strong>1990s:</strong> Machine learning statistical approaches</li>
+                        <li><strong>2006:</strong> Deep learning breakthrough</li>
+                        <li><strong>2012:</strong> AlexNet wins ImageNet - computer vision revolution</li>
+                        <li><strong>2017:</strong> Transformer architecture - foundation of modern AI</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="ai-slide">
+                <h2>🎯 AI Milestones & Breakthroughs</h2>
+                <div class="innovation-grid">
+                    <div class="tech-evolution">
+                        <h4>Game AI Victories</h4>
+                        <ul>
+                            <li>Deep Blue beats Kasparov (1997)</li>
+                            <li>Watson wins Jeopardy! (2011)</li>
+                            <li>AlphaGo defeats Go champion (2016)</li>
+                            <li>OpenAI Five in Dota 2 (2018)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Language Models</h4>
+                        <ul>
+                            <li>GPT series evolution</li>
+                            <li>BERT and transformer models</li>
+                            <li>ChatGPT mainstream adoption</li>
+                            <li>Multimodal AI systems</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Computer Vision</h4>
+                        <ul>
+                            <li>Image classification mastery</li>
+                            <li>Object detection and tracking</li>
+                            <li>Facial recognition systems</li>
+                            <li>Autonomous vehicle vision</li>
+                        </ul>
+                    </div>
+                    <div class="tech-evolution">
+                        <h4>Real-World Applications</h4>
+                        <ul>
+                            <li>Medical diagnosis assistance</li>
+                            <li>Drug discovery acceleration</li>
+                            <li>Scientific research automation</li>
+                            <li>Creative content generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+			
+            <!-- Birth of Modern Computing -->
+            <section class="modern-slide">
+                <h2>🔬 The Birth of Modern Computing</h2>
+                <div class="timeline-item">
+                    <h3>Charles Babbage's Engines (1820s-1840s)</h3>
+                    <ul>
+                        <li><strong>Difference Engine:</strong> Automatic calculation of mathematical tables</li>
+                        <li><strong>Analytical Engine:</strong> First design for a general-purpose computer</li>
+                        <li>Featured: Mill (CPU), Store (Memory), Input/Output</li>
+                        <li>Ada Lovelace wrote the first algorithm (1843)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="modern-slide">
+                <h2>⚡ Electronic Revolution</h2>
+                <div class="timeline-item">
+                    <h3>ENIAC (1946) - First Electronic Computer</h3>
+                    <ul>
+                        <li>30 tons, 18,000 vacuum tubes</li>
+                        <li>1,000 times faster than mechanical computers</li>
+                        <li>Programmed by physically rewiring</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Transistor (1947) - The Game Changer</h3>
+                    <ul>
+                        <li>Replaced vacuum tubes</li>
+                        <li>Smaller, faster, more reliable</li>
+                        <li>Enabled modern electronics revolution</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Programming Languages Era -->
+            
+		
+            <!-- Quantum Computing -->
+            <section class="quantum-slide">
+                <h2>⚛️ Quantum Computing</h2>
+                <h3>The Next Frontier</h3>
+                <div class="quantum-concept">
+                    <h4>What is Quantum Computing?</h4>
+                    <p>Computing that harnesses quantum mechanical phenomena like superposition and entanglement to process information in fundamentally new ways.</p>
+                </div>
+            </section>
+
+            <section class="quantum-slide">
+                <h2>🔬 Quantum Principles</h2>
+                <div class="innovation-grid">
+                    <div class="quantum-concept">
+                        <h4>Superposition</h4>
+                        <p>Qubits can be in multiple states simultaneously, unlike classical bits (0 or 1)</p>
+                    </div>
+                    <div class="quantum-concept">
+                        <h4>Entanglement</h4>
+                        <p>Qubits can be correlated in ways that classical physics cannot explain</p>
+                    </div>
+                    <div class="quantum-concept">
+                        <h4>Interference</h4>
+                        <p>Quantum states can amplify correct answers and cancel wrong ones</p>
+                    </div>
+                    <div class="quantum-concept">
+                        <h4>Decoherence</h4>
+                        <p>Quantum states are fragile and require extreme isolation</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quantum-slide">
+                <h2>🏢 Quantum Computing Timeline</h2>
+                <div class="timeline-item">
+                    <h3>1980s: Theoretical Foundation</h3>
+                    <p>Richard Feynman and David Deutsch propose quantum computation</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>1990s: Key Algorithms</h3>
+                    <p>Shor's algorithm (factoring) and Grover's algorithm (search)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2000s-2010s: First Implementations</h3>
+                    <p>Small quantum computers with few qubits</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020s: Quantum Advantage</h3>
+                    <p>Google's quantum supremacy, IBM's quantum cloud access</p>
+                </div>
+            </section>
+
+            <section class="quantum-slide">
+                <h2>🎯 Quantum Applications</h2>
+                <div class="innovation-grid">
+                    <div class="quantum-concept">
+                        <h4>Cryptography</h4>
+                        <p>Breaking current encryption and creating quantum-safe methods</p>
+                    </div>
+                    <div class="quantum-concept">
+                        <h4>Drug Discovery</h4>
+                        <p>Simulating molecular interactions at quantum level</p>
+                    </div>
+                    <div class="quantum-concept">
+                        <h4>Optimization</h4>
+                        <p>Solving complex logistics and scheduling problems</p>
+                    </div>
+                    <div class="quantum-concept">
+                        <h4>Machine Learning</h4>
+                        <p>Quantum algorithms for AI and pattern recognition</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quantum-slide">
+                <h2>🌐 Quantum Programming</h2>
+                <div class="timeline-item">
+                    <h3>Quantum Languages and Frameworks</h3>
+                    <div class="code-example">
+// Qiskit (Python) - Creating a quantum circuit
+from qiskit import QuantumCircuit, execute, Aer
+
+# Create a quantum circuit with 2 qubits
+qc = QuantumCircuit(2, 2)
+
+# Add a Hadamard gate (superposition)
+qc.h(0)
+
+# Add a CNOT gate (entanglement)
+qc.cx(0, 1)
+
+# Measure the qubits
+qc.measure_all()
+                    </div>
+                    <ul>
+                        <li><strong>Qiskit:</strong> IBM's quantum computing framework</li>
+                        <li><strong>Cirq:</strong> Google's quantum programming framework</li>
+                        <li><strong>Q#:</strong> Microsoft's quantum programming language</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="quantum-slide">
+                <h2>🔮 Quantum Future</h2>
+                <div class="timeline-item">
+                    <h3>Challenges and Opportunities</h3>
+                    <ul>
+                        <li><strong>Current Limitations:</strong> Noise, error rates, limited qubit counts</li>
+                        <li><strong>Near-term (2020s):</strong> Noisy Intermediate-Scale Quantum (NISQ) era</li>
+                        <li><strong>Long-term Vision:</strong> Fault-tolerant quantum computers</li>
+                        <li><strong>Potential Impact:</strong> Revolutionary advances in science, cryptography, and AI</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>The Foundation of Computing</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Why Programming Languages Matter</h3>
+                        <ul>
+                            <li>Bridge between human thought and machine execution</li>
+                            <li>Enable complex software systems</li>
+                            <li>Reflect evolution of computer science</li>
+                            <li>Shape how we solve problems</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Our Journey Today</h3>
+                        <ul>
+                            <li>🕰️ Seven decades of innovation</li>
+                            <li>🔄 Evolution of programming paradigms</li>
+                            <li>🌟 Key breakthrough moments</li>
+                            <li>🚀 Modern trends and future directions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+			<section>
+                <h2>Programming Language Evolution Timeline</h2>
+                <div style="font-size: 0.8em;">
+                    <div class="timeline-item"><strong>1950s:</strong> FORTRAN, LISP, COBOL - First high-level languages</div>
+                    <div class="timeline-item"><strong>1960s:</strong> ALGOL, BASIC, PL/I - Structured programming foundations</div>
+                    <div class="timeline-item"><strong>1970s:</strong> C, Pascal, SQL - Systems programming and databases</div>
+                    <div class="timeline-item"><strong>1980s:</strong> C++, Objective-C, Perl - Object-oriented revolution</div>
+                    <div class="timeline-item"><strong>1990s:</strong> Python, Java, JavaScript, PHP - Internet era begins</div>
+                    <div class="timeline-item"><strong>2000s:</strong> C#, Scala, F# - Modern paradigms emerge</div>
+                    <div class="timeline-item"><strong>2010s:</strong> Go, Rust, Kotlin, Swift - Performance meets safety</div>
+                    <div class="timeline-item"><strong>2020s:</strong> AI-driven development, quantum computing languages</div>
+                </div>
+            </section>
+			<section>
+
+			<section>
+                <div class="language-card">
+                    <h2>Programming Languages</h2>
+                </div>
+            </section>
+
+            <!-- FORTRAN -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">FORTRAN</div>
+                    <div class="language-year">1957 - IBM</div>
+                    <p><strong>Origins:</strong> Developed by IBM, FORTRAN (Formula Translation) emerged as one of the first high-level languages for scientists and engineers.</p>
+                    <p><strong>Unique Features:</strong> Introduced higher-level abstraction, allowing developers to focus on logic rather than machine-specific instructions.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Revolutionized program writing and laid groundwork for future high-level languages. Still used in scientific computing today.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-fortran">PROGRAM HELLO
+PRINT *, 'Hello, World!'
+END PROGRAM HELLO</code></pre>
+                </div>
+            </section>
+
+            <!-- LISP -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">LISP</div>
+                    <div class="language-year">1958 - John McCarthy</div>
+                    <p><strong>Origins:</strong> Created for artificial intelligence research, introducing revolutionary concepts.</p>
+                    <p><strong>Unique Features:</strong> First language with recursive functions, unique syntax manipulating symbols and lists, introduced garbage collection.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Foundational to AI and language processing, spawned dialects like Scheme and Common Lisp.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-lisp">(print "Hello, World!")</code></pre>
+                </div>
+            </section>
+
+            <!-- COBOL -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">COBOL</div>
+                    <div class="language-year">1959 - Grace Hopper & Committee</div>
+                    <p><strong>Origins:</strong> Developed for business data processing with focus on readability.</p>
+                    <p><strong>Unique Features:</strong> English-like syntax, record data types, extensive file handling capabilities.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Backbone of many legacy business systems, still in use today in financial and government sectors.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-cobol">IDENTIFICATION DIVISION.
+PROGRAM-ID. HelloWorld.
+PROCEDURE DIVISION.
+    DISPLAY 'Hello, World!'.
+    STOP RUN.</code></pre>
+                </div>
+            </section>
+
+            <!-- 1960s Era -->
+            <section>
+                <div class="era-title">Proliferation and Diversification<br>1960s</div>
+            </section>
+
+            <!-- ALGOL -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">ALGOL</div>
+                    <div class="language-year">1960 - International Committee</div>
+                    <p><strong>Origins:</strong> Developed to provide a universal language for describing algorithms.</p>
+                    <p><strong>Unique Features:</strong> Introduced block structure and lexical scope, formal syntax definition.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Incredibly influential despite limited usage, shaped Pascal and C language design.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-algol">BEGIN
+  outstring(1, "Hello, World!")
+END</code></pre>
+                </div>
+            </section>
+
+            <!-- BASIC -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">BASIC</div>
+                    <div class="language-year">1964 - Kemeny & Kurtz</div>
+                    <p><strong>Origins:</strong> Created at Dartmouth College to make programming accessible to students and beginners.</p>
+                    <p><strong>Unique Features:</strong> Extreme simplicity, interactive development, easy to learn syntax.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Introduced millions to programming through personal computers, evolved into Visual Basic for enterprise development.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-basic">10 PRINT "Hello, World!"
+20 END</code></pre>
+                </div>
+            </section>
+
+            <!-- 1970s Era -->
+            <section>
+                <div class="era-title">The Advent of Structured Programming<br>1970s</div>
+            </section>
+
+            <!-- Pascal -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Pascal</div>
+                    <div class="language-year">1970 - Niklaus Wirth</div>
+                    <p><strong>Origins:</strong> Created as an instructional tool to teach programming and promote good practices.</p>
+                    <p><strong>Unique Features:</strong> Strong type checking, structured programming, records and sets, excellent readability.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Widely used in academia, influenced Modula and Ada, spirit lives on in Object Pascal and Delphi.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-pascal">program HelloWorld;
+begin
+  writeln('Hello, World!');
+end.</code></pre>
+                </div>
+            </section>
+
+            <!-- C Language -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">C</div>
+                    <div class="language-year">1972 - Dennis Ritchie & Ken Thompson</div>
+                    <p><strong>Origins:</strong> Developed at Bell Labs for system programming and to rewrite UNIX.</p>
+                    <p><strong>Unique Features:</strong> Pointers and direct memory manipulation, simplicity and flexibility, powerful for system-level tasks.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Monumental influence on C++, Java, Python, and countless others. Foundation of modern system programming.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- SQL -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">SQL</div>
+                    <div class="language-year">1974 - Chamberlin & Boyce (IBM)</div>
+                    <p><strong>Origins:</strong> Designed for managing data in relational databases.</p>
+                    <p><strong>Unique Features:</strong> Declarative query language, supports transactions, sub-selects, triggers, and stored procedures.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Became the universal standard for database manipulation, indispensable in modern software development.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-sql">SELECT 'Hello, World!' AS Greeting;</code></pre>
+                </div>
+            </section>
+
+            <!-- 1980s Era -->
+            <section>
+                <div class="era-title">The Object-Oriented Boom<br>1980s</div>
+            </section>
+
+            <!-- C++ -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">C++</div>
+                    <div class="language-year">1983 - Bjarne Stroustrup</div>
+                    <p><strong>Origins:</strong> Extension of C at Bell Labs, introducing object-oriented features.</p>
+                    <p><strong>Unique Features:</strong> Classes, objects, inheritance, multiple inheritance, templates, operator overloading.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> One of the most widely used languages for systems, games, and performance-critical applications.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-cpp">#include &lt;iostream&gt;
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Objective-C -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Objective-C</div>
+                    <div class="language-year">1984 - Brad Cox & Tom Love</div>
+                    <p><strong>Origins:</strong> Extended C with Smalltalk features, providing object-oriented capabilities and dynamic runtime.</p>
+                    <p><strong>Unique Features:</strong> Message-passing paradigm, dynamic and flexible software architectures, runtime introspection.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Foundation for Apple's OS X and iOS development, though being superseded by Swift.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-objc">#import &lt;Foundation/Foundation.h&gt;
+int main() {
+    NSLog(@"Hello, World!");
+    return 0;
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Perl -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Perl</div>
+                    <div class="language-year">1987 - Larry Wall</div>
+                    <p><strong>Origins:</strong> Designed for text manipulation and report generation.</p>
+                    <p><strong>Unique Features:</strong> Powerful text manipulation, flexible syntax, multiple programming paradigms, extensive regular expression support.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Widely used for web development, system administration, paved the way for Python and Ruby.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-perl">print "Hello, World!\n";</code></pre>
+                </div>
+            </section>
+
+            <!-- 1990s Era -->
+            <section>
+                <div class="era-title">The Internet and Beyond<br>1990s</div>
+            </section>
+
+            <!-- Python -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Python</div>
+                    <div class="language-year">1991 - Guido van Rossum</div>
+                    <p><strong>Origins:</strong> Successor to ABC language, designed for ease of understanding and writing. Named after Monty Python.</p>
+                    <p><strong>Unique Features:</strong> Clean syntax and readability, multiple programming paradigms, vast ecosystem of libraries.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Dominant in data science, AI, web development, and education. Praised for versatility and ease of learning.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-python">print("Hello, World!")</code></pre>
+                </div>
+            </section>
+
+            <!-- Java -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Java</div>
+                    <div class="language-year">1995 - James Gosling (Sun Microsystems)</div>
+                    <p><strong>Origins:</strong> Initially designed for interactive television, became general-purpose object-oriented language.</p>
+                    <p><strong>Unique Features:</strong> "Write Once, Run Anywhere" (WORA), Java Virtual Machine (JVM), automatic memory management, strong security model.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Revolutionized enterprise applications, Android development, made OOP mainstream.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- JavaScript -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">JavaScript</div>
+                    <div class="language-year">1995 - Brendan Eich (Netscape)</div>
+                    <p><strong>Origins:</strong> Created in 10 days to make web pages interactive and dynamic.</p>
+                    <p><strong>Unique Features:</strong> Dynamic typing, prototype-based inheritance, first-class functions, event-driven programming.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Cornerstone of modern web development, expanded to server-side (Node.js), mobile apps, and desktop applications.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
+                </div>
+            </section>
+
+            <!-- PHP -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">PHP</div>
+                    <div class="language-year">1995 - Rasmus Lerdorf</div>
+                    <p><strong>Origins:</strong> Originally "Personal Home Page," now "PHP: Hypertext Preprocessor."</p>
+                    <p><strong>Unique Features:</strong> Embedded within HTML, supports various databases and web servers, easy web development.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Extensively used for server-side web development, powers major websites like WordPress and Facebook.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-php">&lt;?php
+echo "Hello, World!";
+?&gt;</code></pre>
+                </div>
+            </section>
+
+            <!-- 2000s Era -->
+            <section>
+                <div class="era-title">The Modern Age<br>2000s-2010s</div>
+            </section>
+
+            <!-- C# -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">C#</div>
+                    <div class="language-year">2000 - Microsoft</div>
+                    <p><strong>Origins:</strong> Developed as part of .NET initiative for modern, general-purpose software development.</p>
+                    <p><strong>Unique Features:</strong> Blends C++ performance with Java ease-of-use, multiple programming paradigms, strong typing.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Widely used in enterprise applications, game development (Unity), and Windows applications.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-csharp">using System;
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Scala -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Scala</div>
+                    <div class="language-year">2003 - Martin Odersky</div>
+                    <p><strong>Origins:</strong> Designed to be a "scalable language" combining object-oriented and functional paradigms.</p>
+                    <p><strong>Unique Features:</strong> Type inference, immutability, concurrency support, runs on JVM with Java interoperability.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Popular in big data processing (Apache Spark), financial services, and enterprise applications.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-scala">object HelloWorld {
+    def main(args: Array[String]): Unit = {
+        println("Hello, World!")
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Go -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Go</div>
+                    <div class="language-year">2009 - Google (Thompson, Pike, Griesemer)</div>
+                    <p><strong>Origins:</strong> Created by Google engineers to address shortcomings in systems programming languages.</p>
+                    <p><strong>Unique Features:</strong> Simplicity and efficiency, garbage collection, built-in concurrency support, fast compilation.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Popular for web servers, data pipelines, cloud infrastructure. Performance comparable to C/C++.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-go">package main
+import "fmt"
+func main() {
+    fmt.Println("Hello, World!")
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Rust -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Rust</div>
+                    <div class="language-year">2010 - Graydon Hoare (Mozilla)</div>
+                    <p><strong>Origins:</strong> Personal project later sponsored by Mozilla, designed for performance with safety focus.</p>
+                    <p><strong>Unique Features:</strong> Memory safety without garbage collection, strongly typed, prevents null pointers and data races.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> "Most loved language" in Stack Overflow surveys, used for systems programming, web assembly, and performance-critical applications.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-rust">fn main() {
+    println!("Hello, World!");
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Modern Era -->
+            <section>
+                <div class="era-title">Current Trends and Emerging Languages<br>2010s-Present</div>
+            </section>
+
+            <!-- Kotlin -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Kotlin</div>
+                    <div class="language-year">2011 - JetBrains</div>
+                    <p><strong>Origins:</strong> Designed for full Java interoperability with modern syntax and features.</p>
+                    <p><strong>Unique Features:</strong> Null safety, coroutines for asynchronous programming, concise syntax, multiplatform capabilities.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Officially supported by Google for Android development, growing in backend and multiplatform development.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-kotlin">fun main() {
+    println("Hello, World!")
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- TypeScript -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">TypeScript</div>
+                    <div class="language-year">2012 - Microsoft</div>
+                    <p><strong>Origins:</strong> Superset of JavaScript adding static types for large-scale applications.</p>
+                    <p><strong>Unique Features:</strong> Optional static typing, interfaces, full JavaScript compatibility, excellent tooling support.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Rapidly growing adoption for large-scale web applications, improving JavaScript development experience.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-typescript">console.log("Hello, World!");</code></pre>
+                </div>
+            </section>
+
+            <!-- Swift -->
+            <section>
+                <div class="language-card">
+                    <div class="language-name">Swift</div>
+                    <div class="language-year">2014 - Apple</div>
+                    <p><strong>Origins:</strong> Modern replacement for Objective-C, designed to be safer, faster, and more expressive.</p>
+                    <p><strong>Unique Features:</strong> Modern syntax, powerful error handling, performance benefits of compiled languages, optional types.</p>
+                    <p><strong><span class="highlight-impact">Impact:</span></strong> Preferred language for iOS and macOS development, expanding into server-side and systems programming.</p>
+                </div>
+                <div class="code-example">
+                    <pre><code class="language-swift">print("Hello, World!")</code></pre>
+                </div>
+            </section>
+			</section>
+            <!-- Specialized Languages -->
+            <section>
+                <h2>Specialized and Emerging Languages</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="timeline-item">
+                            <strong>Julia (2012)</strong> - High-performance scientific computing
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Elixir (2011)</strong> - Functional, concurrent systems
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Dart (2011)</strong> - Flutter mobile development
+                        </div>
+                        <div class="timeline-item">
+                            <strong>R (1993)</strong> - Statistical computing and analysis
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="timeline-item">
+                            <strong>Solidity (2014)</strong> - Ethereum smart contracts
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Elm (2012)</strong> - Functional frontend development
+                        </div>
+                        <div class="timeline-item">
+                            <strong>F# (2005)</strong> - Functional-first .NET language
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Groovy (2003)</strong> - Dynamic JVM language
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline Overview -->
+            
+            <!-- Programming Paradigms -->
+            <section>
+                <h2>Evolution of Programming Paradigms</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Procedural Programming</h3>
+                        <ul>
+                            <li>FORTRAN, COBOL, C</li>
+                            <li>Step-by-step instructions</li>
+                            <li>Functions and procedures</li>
+                        </ul>
+                        
+                        <h3>Object-Oriented Programming</h3>
+                        <ul>
+                            <li>Smalltalk, C++, Java</li>
+                            <li>Encapsulation, inheritance</li>
+                            <li>Code reusability</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Functional Programming</h3>
+                        <ul>
+                            <li>LISP, Haskell, F#</li>
+                            <li>Immutability, pure functions</li>
+                            <li>Mathematical approach</li>
+                        </ul>
+                        
+                        <h3>Multi-Paradigm</h3>
+                        <ul>
+                            <li>Python, Scala, Rust</li>
+                            <li>Combines multiple approaches</li>
+                            <li>Flexibility and expressiveness</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current Trends -->
+            <section>
+                <h2>Current Trends in Programming Languages</h2>
+                <div class="language-card">
+                    <h3>🚀 Performance & Safety</h3>
+                    <p>Languages like Rust and Go prioritize both high performance and memory safety, eliminating entire classes of bugs.</p>
+                </div>
+                <div class="language-card">
+                    <h3>🧠 AI & Machine Learning</h3>
+                    <p>Python dominates AI/ML with extensive libraries, while Julia emerges for high-performance scientific computing.</p>
+                </div>
+                <div class="language-card">
+                    <h3>🌐 Cross-Platform Development</h3>
+                    <p>Languages like Kotlin, Dart (Flutter), and TypeScript enable writing once and deploying everywhere.</p>
+                </div>
+                <div class="language-card">
+                    <h3>⚡ Concurrent & Parallel Processing</h3>
+                    <p>Modern languages build in concurrency primitives to handle multi-core processors and distributed systems.</p>
+                </div>
+            </section>
+				
 			</div>
 		</div>
 
